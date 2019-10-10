@@ -45,6 +45,11 @@
             this.lbSoftware = new System.Windows.Forms.Label();
             this.lbNomeCliente = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.cbDificuldade2 = new System.Windows.Forms.ComboBox();
+            this.lbDificuldade2 = new System.Windows.Forms.Label();
+            this.cbSoftware2 = new System.Windows.Forms.ComboBox();
+            this.lbSoftware2 = new System.Windows.Forms.Label();
+            this.btAlterações = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbCliente2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -55,11 +60,10 @@
             this.lbProcedimento = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbTecnico = new System.Windows.Forms.Label();
-            this.btAlterações = new System.Windows.Forms.Button();
-            this.cbDificuldade2 = new System.Windows.Forms.ComboBox();
-            this.lbDificuldade2 = new System.Windows.Forms.Label();
-            this.cbSoftware2 = new System.Windows.Forms.ComboBox();
-            this.lbSoftware2 = new System.Windows.Forms.Label();
+            this.lbTituloProblema = new System.Windows.Forms.Label();
+            this.txtTituloProblema = new System.Windows.Forms.TextBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.lbCategoria = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -101,7 +105,7 @@
             // btCancel
             // 
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btCancel.Location = new System.Drawing.Point(7, 248);
+            this.btCancel.Location = new System.Drawing.Point(7, 352);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(95, 33);
             this.btCancel.TabIndex = 12;
@@ -111,7 +115,7 @@
             // btNext
             // 
             this.btNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btNext.Location = new System.Drawing.Point(6, 196);
+            this.btNext.Location = new System.Drawing.Point(7, 159);
             this.btNext.Name = "btNext";
             this.btNext.Size = new System.Drawing.Size(95, 33);
             this.btNext.TabIndex = 11;
@@ -240,6 +244,10 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cbCategoria);
+            this.tabPage2.Controls.Add(this.lbCategoria);
+            this.tabPage2.Controls.Add(this.lbTituloProblema);
+            this.tabPage2.Controls.Add(this.txtTituloProblema);
             this.tabPage2.Controls.Add(this.cbDificuldade2);
             this.tabPage2.Controls.Add(this.lbDificuldade2);
             this.tabPage2.Controls.Add(this.cbSoftware2);
@@ -262,6 +270,68 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // cbDificuldade2
+            // 
+            this.cbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDificuldade2.FormattingEnabled = true;
+            this.cbDificuldade2.Items.AddRange(new object[] {
+            "Fácil",
+            "Médio",
+            "Difícil"});
+            this.cbDificuldade2.Location = new System.Drawing.Point(631, 64);
+            this.cbDificuldade2.Name = "cbDificuldade2";
+            this.cbDificuldade2.Size = new System.Drawing.Size(121, 28);
+            this.cbDificuldade2.TabIndex = 33;
+            this.cbDificuldade2.Visible = false;
+            // 
+            // lbDificuldade2
+            // 
+            this.lbDificuldade2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbDificuldade2.Location = new System.Drawing.Point(530, 60);
+            this.lbDificuldade2.Name = "lbDificuldade2";
+            this.lbDificuldade2.Size = new System.Drawing.Size(95, 34);
+            this.lbDificuldade2.TabIndex = 32;
+            this.lbDificuldade2.Text = "Dificuldade";
+            this.lbDificuldade2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDificuldade2.Visible = false;
+            // 
+            // cbSoftware2
+            // 
+            this.cbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbSoftware2.FormattingEnabled = true;
+            this.cbSoftware2.Items.AddRange(new object[] {
+            "Little Company\'s SW",
+            "Restaurant\'s SW",
+            "Big Industry\'s SW"});
+            this.cbSoftware2.Location = new System.Drawing.Point(589, 116);
+            this.cbSoftware2.Name = "cbSoftware2";
+            this.cbSoftware2.Size = new System.Drawing.Size(194, 28);
+            this.cbSoftware2.TabIndex = 31;
+            this.cbSoftware2.Visible = false;
+            // 
+            // lbSoftware2
+            // 
+            this.lbSoftware2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbSoftware2.Location = new System.Drawing.Point(484, 112);
+            this.lbSoftware2.Name = "lbSoftware2";
+            this.lbSoftware2.Size = new System.Drawing.Size(95, 34);
+            this.lbSoftware2.TabIndex = 30;
+            this.lbSoftware2.Text = "Software";
+            this.lbSoftware2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSoftware2.Visible = false;
+            // 
+            // btAlterações
+            // 
+            this.btAlterações.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAlterações.Location = new System.Drawing.Point(22, 313);
+            this.btAlterações.Name = "btAlterações";
+            this.btAlterações.Size = new System.Drawing.Size(95, 33);
+            this.btAlterações.TabIndex = 29;
+            this.btAlterações.Text = "Alterações";
+            this.btAlterações.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
@@ -312,7 +382,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(6, 352);
+            this.button1.Location = new System.Drawing.Point(22, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 33);
             this.button1.TabIndex = 23;
@@ -322,7 +392,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(7, 251);
+            this.button2.Location = new System.Drawing.Point(22, 196);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 33);
             this.button2.TabIndex = 22;
@@ -359,67 +429,48 @@
             this.lbTecnico.Text = "Técnico";
             this.lbTecnico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btAlterações
+            // lbTituloProblema
             // 
-            this.btAlterações.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btAlterações.Location = new System.Drawing.Point(7, 313);
-            this.btAlterações.Name = "btAlterações";
-            this.btAlterações.Size = new System.Drawing.Size(95, 33);
-            this.btAlterações.TabIndex = 29;
-            this.btAlterações.Text = "Alterações";
-            this.btAlterações.UseVisualStyleBackColor = true;
+            this.lbTituloProblema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbTituloProblema.Location = new System.Drawing.Point(7, 112);
+            this.lbTituloProblema.Name = "lbTituloProblema";
+            this.lbTituloProblema.Size = new System.Drawing.Size(95, 34);
+            this.lbTituloProblema.TabIndex = 35;
+            this.lbTituloProblema.Text = "Título";
+            this.lbTituloProblema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cbDificuldade2
+            // txtTituloProblema
             // 
-            this.cbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbDificuldade2.FormattingEnabled = true;
-            this.cbDificuldade2.Items.AddRange(new object[] {
-            "Fácil",
-            "Médio",
-            "Difícil"});
-            this.cbDificuldade2.Location = new System.Drawing.Point(631, 64);
-            this.cbDificuldade2.Name = "cbDificuldade2";
-            this.cbDificuldade2.Size = new System.Drawing.Size(121, 28);
-            this.cbDificuldade2.TabIndex = 33;
-            this.cbDificuldade2.Visible = false;
+            this.txtTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTituloProblema.Location = new System.Drawing.Point(108, 118);
+            this.txtTituloProblema.Name = "txtTituloProblema";
+            this.txtTituloProblema.Size = new System.Drawing.Size(123, 26);
+            this.txtTituloProblema.TabIndex = 34;
             // 
-            // lbDificuldade2
+            // cbCategoria
             // 
-            this.lbDificuldade2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbDificuldade2.Location = new System.Drawing.Point(530, 60);
-            this.lbDificuldade2.Name = "lbDificuldade2";
-            this.lbDificuldade2.Size = new System.Drawing.Size(95, 34);
-            this.lbDificuldade2.TabIndex = 32;
-            this.lbDificuldade2.Text = "Dificuldade";
-            this.lbDificuldade2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbDificuldade2.Visible = false;
+            this.cbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Items.AddRange(new object[] {
+            "Problema",
+            "Requisição de serviço",
+            "Conexão"});
+            this.cbCategoria.Location = new System.Drawing.Point(338, 116);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(140, 28);
+            this.cbCategoria.TabIndex = 37;
             // 
-            // cbSoftware2
+            // lbCategoria
             // 
-            this.cbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbSoftware2.FormattingEnabled = true;
-            this.cbSoftware2.Items.AddRange(new object[] {
-            "Little Company\'s SW",
-            "Restaurant\'s SW",
-            "Big Industry\'s SW"});
-            this.cbSoftware2.Location = new System.Drawing.Point(108, 115);
-            this.cbSoftware2.Name = "cbSoftware2";
-            this.cbSoftware2.Size = new System.Drawing.Size(194, 28);
-            this.cbSoftware2.TabIndex = 31;
-            this.cbSoftware2.Visible = false;
-            // 
-            // lbSoftware2
-            // 
-            this.lbSoftware2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbSoftware2.Location = new System.Drawing.Point(7, 111);
-            this.lbSoftware2.Name = "lbSoftware2";
-            this.lbSoftware2.Size = new System.Drawing.Size(95, 34);
-            this.lbSoftware2.TabIndex = 30;
-            this.lbSoftware2.Text = "Software";
-            this.lbSoftware2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbSoftware2.Visible = false;
+            this.lbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbCategoria.Location = new System.Drawing.Point(237, 114);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(95, 34);
+            this.lbCategoria.TabIndex = 36;
+            this.lbCategoria.Text = "Categoria";
+            this.lbCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -471,6 +522,10 @@
         private System.Windows.Forms.Label lbDificuldade2;
         private System.Windows.Forms.ComboBox cbSoftware2;
         private System.Windows.Forms.Label lbSoftware2;
+        private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.Label lbCategoria;
+        private System.Windows.Forms.Label lbTituloProblema;
+        private System.Windows.Forms.TextBox txtTituloProblema;
     }
 }
 
