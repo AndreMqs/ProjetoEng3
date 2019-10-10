@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btNext = new System.Windows.Forms.Button();
+            this.cbContrato = new System.Windows.Forms.ComboBox();
             this.lbContrato = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.RichTextBox();
             this.lbDescricao = new System.Windows.Forms.Label();
@@ -42,11 +45,24 @@
             this.lbSoftware = new System.Windows.Forms.Label();
             this.lbNomeCliente = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btNext = new System.Windows.Forms.Button();
-            this.btCancel = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lbCliente2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbTempoGasto = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lbProcedimento = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbTecnico = new System.Windows.Forms.Label();
+            this.btAlterações = new System.Windows.Forms.Button();
+            this.cbDificuldade2 = new System.Windows.Forms.ComboBox();
+            this.lbDificuldade2 = new System.Windows.Forms.Label();
+            this.cbSoftware2 = new System.Windows.Forms.ComboBox();
+            this.lbSoftware2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -63,7 +79,7 @@
             // 
             this.tabPage1.Controls.Add(this.btCancel);
             this.tabPage1.Controls.Add(this.btNext);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.cbContrato);
             this.tabPage1.Controls.Add(this.lbContrato);
             this.tabPage1.Controls.Add(this.txtDescricao);
             this.tabPage1.Controls.Add(this.lbDescricao);
@@ -81,6 +97,38 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btCancel
+            // 
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btCancel.Location = new System.Drawing.Point(7, 248);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(95, 33);
+            this.btCancel.TabIndex = 12;
+            this.btCancel.Text = "Cancel";
+            this.btCancel.UseVisualStyleBackColor = true;
+            // 
+            // btNext
+            // 
+            this.btNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btNext.Location = new System.Drawing.Point(6, 196);
+            this.btNext.Name = "btNext";
+            this.btNext.Size = new System.Drawing.Size(95, 33);
+            this.btNext.TabIndex = 11;
+            this.btNext.Text = "Next";
+            this.btNext.UseVisualStyleBackColor = true;
+            // 
+            // cbContrato
+            // 
+            this.cbContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbContrato.FormattingEnabled = true;
+            this.cbContrato.Items.AddRange(new object[] {
+            "Válido",
+            "Inválido"});
+            this.cbContrato.Location = new System.Drawing.Point(637, 73);
+            this.cbContrato.Name = "cbContrato";
+            this.cbContrato.Size = new System.Drawing.Size(146, 28);
+            this.cbContrato.TabIndex = 10;
             // 
             // lbContrato
             // 
@@ -192,6 +240,21 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cbDificuldade2);
+            this.tabPage2.Controls.Add(this.lbDificuldade2);
+            this.tabPage2.Controls.Add(this.cbSoftware2);
+            this.tabPage2.Controls.Add(this.lbSoftware2);
+            this.tabPage2.Controls.Add(this.btAlterações);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.lbCliente2);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.lbTempoGasto);
+            this.tabPage2.Controls.Add(this.richTextBox1);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.lbProcedimento);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.lbTecnico);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -200,38 +263,163 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // textBox3
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox3.Location = new System.Drawing.Point(357, 64);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(154, 26);
+            this.textBox3.TabIndex = 28;
+            // 
+            // lbCliente2
+            // 
+            this.lbCliente2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCliente2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbCliente2.Location = new System.Drawing.Point(237, 60);
+            this.lbCliente2.Name = "lbCliente2";
+            this.lbCliente2.Size = new System.Drawing.Size(114, 34);
+            this.lbCliente2.TabIndex = 27;
+            this.lbCliente2.Text = "Cliente";
+            this.lbCliente2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox2.Location = new System.Drawing.Point(126, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(105, 26);
+            this.textBox2.TabIndex = 26;
+            // 
+            // lbTempoGasto
+            // 
+            this.lbTempoGasto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbTempoGasto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbTempoGasto.Location = new System.Drawing.Point(6, 60);
+            this.lbTempoGasto.Name = "lbTempoGasto";
+            this.lbTempoGasto.Size = new System.Drawing.Size(114, 34);
+            this.lbTempoGasto.TabIndex = 25;
+            this.lbTempoGasto.Text = "Tempo gasto";
+            this.lbTempoGasto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(123, 159);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(669, 235);
+            this.richTextBox1.TabIndex = 24;
+            this.richTextBox1.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.Location = new System.Drawing.Point(6, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 33);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button2.Location = new System.Drawing.Point(7, 251);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 33);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Next";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // lbProcedimento
+            // 
+            this.lbProcedimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbProcedimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbProcedimento.Location = new System.Drawing.Point(7, 159);
+            this.lbProcedimento.Name = "lbProcedimento";
+            this.lbProcedimento.Size = new System.Drawing.Size(113, 34);
+            this.lbProcedimento.TabIndex = 19;
+            this.lbProcedimento.Text = "Procedimento";
+            this.lbProcedimento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox1.Location = new System.Drawing.Point(159, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(624, 38);
+            this.textBox1.TabIndex = 15;
+            // 
+            // lbTecnico
+            // 
+            this.lbTecnico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lbTecnico.Location = new System.Drawing.Point(6, 10);
+            this.lbTecnico.Name = "lbTecnico";
+            this.lbTecnico.Size = new System.Drawing.Size(137, 38);
+            this.lbTecnico.TabIndex = 13;
+            this.lbTecnico.Text = "Técnico";
+            this.lbTecnico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btAlterações
+            // 
+            this.btAlterações.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAlterações.Location = new System.Drawing.Point(7, 313);
+            this.btAlterações.Name = "btAlterações";
+            this.btAlterações.Size = new System.Drawing.Size(95, 33);
+            this.btAlterações.TabIndex = 29;
+            this.btAlterações.Text = "Alterações";
+            this.btAlterações.UseVisualStyleBackColor = true;
+            // 
+            // cbDificuldade2
+            // 
+            this.cbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDificuldade2.FormattingEnabled = true;
+            this.cbDificuldade2.Items.AddRange(new object[] {
             "Fácil",
             "Médio",
             "Difícil"});
-            this.comboBox1.Location = new System.Drawing.Point(637, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 28);
-            this.comboBox1.TabIndex = 10;
+            this.cbDificuldade2.Location = new System.Drawing.Point(631, 64);
+            this.cbDificuldade2.Name = "cbDificuldade2";
+            this.cbDificuldade2.Size = new System.Drawing.Size(121, 28);
+            this.cbDificuldade2.TabIndex = 33;
+            this.cbDificuldade2.Visible = false;
             // 
-            // btNext
+            // lbDificuldade2
             // 
-            this.btNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btNext.Location = new System.Drawing.Point(6, 196);
-            this.btNext.Name = "btNext";
-            this.btNext.Size = new System.Drawing.Size(95, 33);
-            this.btNext.TabIndex = 11;
-            this.btNext.Text = "Next";
-            this.btNext.UseVisualStyleBackColor = true;
+            this.lbDificuldade2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbDificuldade2.Location = new System.Drawing.Point(530, 60);
+            this.lbDificuldade2.Name = "lbDificuldade2";
+            this.lbDificuldade2.Size = new System.Drawing.Size(95, 34);
+            this.lbDificuldade2.TabIndex = 32;
+            this.lbDificuldade2.Text = "Dificuldade";
+            this.lbDificuldade2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDificuldade2.Visible = false;
             // 
-            // btCancel
+            // cbSoftware2
             // 
-            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btCancel.Location = new System.Drawing.Point(7, 248);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(95, 33);
-            this.btCancel.TabIndex = 12;
-            this.btCancel.Text = "Cancel";
-            this.btCancel.UseVisualStyleBackColor = true;
+            this.cbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbSoftware2.FormattingEnabled = true;
+            this.cbSoftware2.Items.AddRange(new object[] {
+            "Little Company\'s SW",
+            "Restaurant\'s SW",
+            "Big Industry\'s SW"});
+            this.cbSoftware2.Location = new System.Drawing.Point(108, 115);
+            this.cbSoftware2.Name = "cbSoftware2";
+            this.cbSoftware2.Size = new System.Drawing.Size(194, 28);
+            this.cbSoftware2.TabIndex = 31;
+            this.cbSoftware2.Visible = false;
+            // 
+            // lbSoftware2
+            // 
+            this.lbSoftware2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbSoftware2.Location = new System.Drawing.Point(7, 111);
+            this.lbSoftware2.Name = "lbSoftware2";
+            this.lbSoftware2.Size = new System.Drawing.Size(95, 34);
+            this.lbSoftware2.TabIndex = 30;
+            this.lbSoftware2.Text = "Software";
+            this.lbSoftware2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSoftware2.Visible = false;
             // 
             // Form1
             // 
@@ -244,6 +432,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -263,9 +453,24 @@
         private System.Windows.Forms.ComboBox cbDificuldade;
         private System.Windows.Forms.Label lbDificuldade;
         private System.Windows.Forms.Label lbContrato;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbContrato;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btNext;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbProcedimento;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lbTecnico;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbTempoGasto;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lbCliente2;
+        private System.Windows.Forms.Button btAlterações;
+        private System.Windows.Forms.ComboBox cbDificuldade2;
+        private System.Windows.Forms.Label lbDificuldade2;
+        private System.Windows.Forms.ComboBox cbSoftware2;
+        private System.Windows.Forms.Label lbSoftware2;
     }
 }
 
