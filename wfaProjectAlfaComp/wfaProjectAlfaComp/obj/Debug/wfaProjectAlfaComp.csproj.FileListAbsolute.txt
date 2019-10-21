@@ -5,6 +5,5 @@ C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software 
 C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.Form1.resources
 C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.Properties.Resources.resources
 C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.csproj.GenerateResource.cache
-C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.csproj.CoreCompileInputs.cache
 C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.exe
 C:\Users\AndreMarquesCamara\Documents\Aulas 4º semestre\Engenharia de software III\RepositorioProjeto\ProjetoEng3\wfaProjectAlfaComp\wfaProjectAlfaComp\obj\Debug\wfaProjectAlfaComp.pdb

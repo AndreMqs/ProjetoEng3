@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btCancel = new System.Windows.Forms.Button();
-            this.btNext = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.cbContrato = new System.Windows.Forms.ComboBox();
             this.lbContrato = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.RichTextBox();
@@ -45,34 +45,44 @@
             this.lbSoftware = new System.Windows.Forms.Label();
             this.lbNomeCliente = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cbDificuldade2 = new System.Windows.Forms.ComboBox();
-            this.lbDificuldade2 = new System.Windows.Forms.Label();
-            this.cbSoftware2 = new System.Windows.Forms.ComboBox();
-            this.lbSoftware2 = new System.Windows.Forms.Label();
-            this.btAlterações = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.lbCategoria = new System.Windows.Forms.Label();
+            this.lbTituloProblema = new System.Windows.Forms.Label();
+            this.txtTituloProblema = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbCliente2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lbTempoGasto = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lbProcedimento = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbTecnico = new System.Windows.Forms.Label();
-            this.lbTituloProblema = new System.Windows.Forms.Label();
-            this.txtTituloProblema = new System.Windows.Forms.TextBox();
-            this.cbCategoria = new System.Windows.Forms.ComboBox();
-            this.lbCategoria = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(1, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -81,8 +91,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.btCancel);
-            this.tabPage1.Controls.Add(this.btNext);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.cbContrato);
             this.tabPage1.Controls.Add(this.lbContrato);
             this.tabPage1.Controls.Add(this.txtDescricao);
@@ -102,25 +112,27 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btCancel
+            // button2
             // 
-            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btCancel.Location = new System.Drawing.Point(7, 352);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(95, 33);
-            this.btCancel.TabIndex = 12;
-            this.btCancel.Text = "Cancel";
-            this.btCancel.UseVisualStyleBackColor = true;
+            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button2.Location = new System.Drawing.Point(7, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 33);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // btNext
+            // button3
             // 
-            this.btNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btNext.Location = new System.Drawing.Point(7, 159);
-            this.btNext.Name = "btNext";
-            this.btNext.Size = new System.Drawing.Size(95, 33);
-            this.btNext.TabIndex = 11;
-            this.btNext.Text = "Next";
-            this.btNext.UseVisualStyleBackColor = true;
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button3.Location = new System.Drawing.Point(58, 352);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(44, 33);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "V";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // cbContrato
             // 
@@ -244,22 +256,17 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.richTextBox1);
             this.tabPage2.Controls.Add(this.cbCategoria);
             this.tabPage2.Controls.Add(this.lbCategoria);
             this.tabPage2.Controls.Add(this.lbTituloProblema);
             this.tabPage2.Controls.Add(this.txtTituloProblema);
-            this.tabPage2.Controls.Add(this.cbDificuldade2);
-            this.tabPage2.Controls.Add(this.lbDificuldade2);
-            this.tabPage2.Controls.Add(this.cbSoftware2);
-            this.tabPage2.Controls.Add(this.lbSoftware2);
-            this.tabPage2.Controls.Add(this.btAlterações);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.lbCliente2);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.lbTempoGasto);
-            this.tabPage2.Controls.Add(this.richTextBox1);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.lbProcedimento);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.lbTecnico);
@@ -271,67 +278,78 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // cbDificuldade2
+            // button1
             // 
-            this.cbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbDificuldade2.FormattingEnabled = true;
-            this.cbDificuldade2.Items.AddRange(new object[] {
-            "Fácil",
-            "Médio",
-            "Difícil"});
-            this.cbDificuldade2.Location = new System.Drawing.Point(631, 64);
-            this.cbDificuldade2.Name = "cbDificuldade2";
-            this.cbDificuldade2.Size = new System.Drawing.Size(121, 28);
-            this.cbDificuldade2.TabIndex = 33;
-            this.cbDificuldade2.Visible = false;
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.Location = new System.Drawing.Point(7, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 33);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // lbDificuldade2
+            // button4
             // 
-            this.lbDificuldade2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDificuldade2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbDificuldade2.Location = new System.Drawing.Point(530, 60);
-            this.lbDificuldade2.Name = "lbDificuldade2";
-            this.lbDificuldade2.Size = new System.Drawing.Size(95, 34);
-            this.lbDificuldade2.TabIndex = 32;
-            this.lbDificuldade2.Text = "Dificuldade";
-            this.lbDificuldade2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbDificuldade2.Visible = false;
+            this.button4.BackColor = System.Drawing.Color.Lime;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button4.Location = new System.Drawing.Point(58, 352);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(44, 33);
+            this.button4.TabIndex = 39;
+            this.button4.Text = "V";
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // cbSoftware2
+            // richTextBox1
             // 
-            this.cbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbSoftware2.FormattingEnabled = true;
-            this.cbSoftware2.Items.AddRange(new object[] {
-            "Little Company\'s SW",
-            "Restaurant\'s SW",
-            "Big Industry\'s SW"});
-            this.cbSoftware2.Location = new System.Drawing.Point(589, 116);
-            this.cbSoftware2.Name = "cbSoftware2";
-            this.cbSoftware2.Size = new System.Drawing.Size(194, 28);
-            this.cbSoftware2.TabIndex = 31;
-            this.cbSoftware2.Visible = false;
+            this.richTextBox1.Location = new System.Drawing.Point(126, 159);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(657, 236);
+            this.richTextBox1.TabIndex = 38;
+            this.richTextBox1.Text = "";
             // 
-            // lbSoftware2
+            // cbCategoria
             // 
-            this.lbSoftware2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSoftware2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbSoftware2.Location = new System.Drawing.Point(484, 112);
-            this.lbSoftware2.Name = "lbSoftware2";
-            this.lbSoftware2.Size = new System.Drawing.Size(95, 34);
-            this.lbSoftware2.TabIndex = 30;
-            this.lbSoftware2.Text = "Software";
-            this.lbSoftware2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbSoftware2.Visible = false;
+            this.cbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Items.AddRange(new object[] {
+            "Problema",
+            "Requisição de serviço",
+            "Conexão"});
+            this.cbCategoria.Location = new System.Drawing.Point(628, 62);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(140, 28);
+            this.cbCategoria.TabIndex = 37;
             // 
-            // btAlterações
+            // lbCategoria
             // 
-            this.btAlterações.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btAlterações.Location = new System.Drawing.Point(22, 313);
-            this.btAlterações.Name = "btAlterações";
-            this.btAlterações.Size = new System.Drawing.Size(95, 33);
-            this.btAlterações.TabIndex = 29;
-            this.btAlterações.Text = "Alterações";
-            this.btAlterações.UseVisualStyleBackColor = true;
+            this.lbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbCategoria.Location = new System.Drawing.Point(527, 60);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(95, 34);
+            this.lbCategoria.TabIndex = 36;
+            this.lbCategoria.Text = "Categoria";
+            this.lbCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTituloProblema
+            // 
+            this.lbTituloProblema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbTituloProblema.Location = new System.Drawing.Point(7, 112);
+            this.lbTituloProblema.Name = "lbTituloProblema";
+            this.lbTituloProblema.Size = new System.Drawing.Size(95, 34);
+            this.lbTituloProblema.TabIndex = 35;
+            this.lbTituloProblema.Text = "Título";
+            this.lbTituloProblema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtTituloProblema
+            // 
+            this.txtTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTituloProblema.Location = new System.Drawing.Point(108, 118);
+            this.txtTituloProblema.Name = "txtTituloProblema";
+            this.txtTituloProblema.Size = new System.Drawing.Size(670, 26);
+            this.txtTituloProblema.TabIndex = 34;
             // 
             // textBox3
             // 
@@ -371,34 +389,6 @@
             this.lbTempoGasto.Text = "Tempo gasto";
             this.lbTempoGasto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(123, 159);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(669, 235);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(22, 352);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 33);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(22, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 33);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Next";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // lbProcedimento
             // 
             this.lbProcedimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -429,62 +419,177 @@
             this.lbTecnico.Text = "Técnico";
             this.lbTecnico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbTituloProblema
+            // tabPage3
             // 
-            this.lbTituloProblema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbTituloProblema.Location = new System.Drawing.Point(7, 112);
-            this.lbTituloProblema.Name = "lbTituloProblema";
-            this.lbTituloProblema.Size = new System.Drawing.Size(95, 34);
-            this.lbTituloProblema.TabIndex = 35;
-            this.lbTituloProblema.Text = "Título";
-            this.lbTituloProblema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabPage3.Controls.Add(this.listBox1);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.comboBox2);
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.comboBox3);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(795, 395);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // txtTituloProblema
+            // listBox1
             // 
-            this.txtTituloProblema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTituloProblema.Location = new System.Drawing.Point(108, 118);
-            this.txtTituloProblema.Name = "txtTituloProblema";
-            this.txtTituloProblema.Size = new System.Drawing.Size(123, 26);
-            this.txtTituloProblema.TabIndex = 34;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "Só Título",
+            "I2",
+            "I3",
+            "I4",
+            "I5"});
+            this.listBox1.Location = new System.Drawing.Point(21, 123);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(358, 264);
+            this.listBox1.TabIndex = 62;
             // 
-            // cbCategoria
+            // label6
             // 
-            this.cbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Items.AddRange(new object[] {
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.Location = new System.Drawing.Point(452, 123);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(300, 265);
+            this.label6.TabIndex = 61;
+            this.label6.Text = "Procedimento desrição";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(519, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 34);
+            this.label5.TabIndex = 60;
+            this.label5.Text = "Técnico";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox5.Location = new System.Drawing.Point(620, 76);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(123, 26);
+            this.textBox5.TabIndex = 59;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Problema",
             "Requisição de serviço",
             "Conexão"});
-            this.cbCategoria.Location = new System.Drawing.Point(338, 116);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(140, 28);
-            this.cbCategoria.TabIndex = 37;
+            this.comboBox1.Location = new System.Drawing.Point(109, 76);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(140, 28);
+            this.comboBox1.TabIndex = 55;
             // 
-            // lbCategoria
+            // label1
             // 
-            this.lbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbCategoria.Location = new System.Drawing.Point(237, 114);
-            this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(95, 34);
-            this.lbCategoria.TabIndex = 36;
-            this.lbCategoria.Text = "Categoria";
-            this.lbCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(8, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 34);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Categoria";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(7, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 34);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Título";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox4.Location = new System.Drawing.Point(108, 28);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(123, 26);
+            this.textBox4.TabIndex = 52;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Fácil",
+            "Médio",
+            "Difícil"});
+            this.comboBox2.Location = new System.Drawing.Point(375, 74);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 28);
+            this.comboBox2.TabIndex = 51;
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.Location = new System.Drawing.Point(274, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 34);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Dificuldade";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Little Company\'s SW",
+            "Restaurant\'s SW",
+            "Big Industry\'s SW"});
+            this.comboBox3.Location = new System.Drawing.Point(379, 24);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(194, 28);
+            this.comboBox3.TabIndex = 49;
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.Location = new System.Drawing.Point(274, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 34);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "Software";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 422);
+            this.ClientSize = new System.Drawing.Size(864, 475);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sua mãe é uma piranha e o seu pai um peixe-boi";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -493,7 +598,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Button btProcurar;
         private System.Windows.Forms.Label lbSoftware;
@@ -505,27 +609,36 @@
         private System.Windows.Forms.Label lbDificuldade;
         private System.Windows.Forms.Label lbContrato;
         private System.Windows.Forms.ComboBox cbContrato;
-        private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Button btNext;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lbProcedimento;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lbTecnico;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lbTempoGasto;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label lbCliente2;
-        private System.Windows.Forms.Button btAlterações;
-        private System.Windows.Forms.ComboBox cbDificuldade2;
-        private System.Windows.Forms.Label lbDificuldade2;
-        private System.Windows.Forms.ComboBox cbSoftware2;
-        private System.Windows.Forms.Label lbSoftware2;
         private System.Windows.Forms.ComboBox cbCategoria;
         private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.Label lbTituloProblema;
         private System.Windows.Forms.TextBox txtTituloProblema;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lbCliente2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbTempoGasto;
+        private System.Windows.Forms.Label lbProcedimento;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lbTecnico;
     }
 }
 
